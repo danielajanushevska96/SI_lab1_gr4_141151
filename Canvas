@@ -1,0 +1,22 @@
+class Canvas {
+
+ArrayList<Point> points = new ArrayList<Point>();
+
+public Canvas(){
+
+	}	
+	
+	@Override
+	public String toString() {
+		String temp = "";// temporary string
+		for (int i = 0; i < points.size() - 1; i++) { // size() is the length 
+														// of ArrayList points
+			temp += points.get(i) + "\n";
+
+		}
+		temp += points.get(points.size() - 1);
+		return temp; // we return a String representation of the Canvas
+
+	}	
+	
+}
